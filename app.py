@@ -10,5 +10,5 @@ mod_wsgi.server.start(
   '--processes', os.environ.get('MOD_WSGI_PROCESSES', '1'),
   '--threads', os.environ.get('MOD_WSGI_THREADS', '5'),
   '--application-type', 'module',
-  '--entry-point', 'wsgi'
+  '--entry-point', 'connecthys/connecthys.wsgi'
 )
