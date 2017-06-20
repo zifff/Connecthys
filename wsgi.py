@@ -1,9 +1,10 @@
-from flask import Flask
+from flask import Flask, render_template
 application = Flask(__name__)
 
 @application.route("/")
-def hello():
-    return "Hello World TOTO!"
+def index():
+    return render_template('noconfig.html')
+	
 
 if __name__ == "__main__":
     application.run()
