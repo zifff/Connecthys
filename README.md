@@ -48,3 +48,12 @@ Installation sur un hébergement internet dédié ou sur Google App Engine
 
 Connecthys peut être installé de plusieurs façons sur un hébergement internet. 
 Consultez la page http://flask.pocoo.org/docs/0.11/deploying/ pour découvrir ces possibilités.
+
+-----------------------------------------------------------------
+Open shift: 
+python 2.7 et pas >3.0 car autrement plantage compilation.
+
+tentative 
+APP_FILE connecthys/connecthys.wsgi
+
+echec.
