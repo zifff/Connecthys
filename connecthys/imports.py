@@ -18,6 +18,9 @@ LISTE_LIBS = [
         "lib/flask_script", "lib/mako", "lib/flask_migrate", "lib/flask_compress",
         "lib/crypto","flask_adminlte",
 	]
+	
+print "passage dans imports.py ..."
+print "chargement des libs "
     
 def AjouteCheminLibs(chemin=os.path.dirname(__name__)) :
     for lib in LISTE_LIBS :
