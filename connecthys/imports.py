@@ -15,8 +15,8 @@ LISTE_LIBS = [
 	"lib/flask_wtf", "lib/itsdangerous", "lib/markupsafe", "lib/sqlalchemy", 
 	"lib/werkzeug", "lib/jinja2", "lib/wtforms", "lib/flask_debugtoolbar",
 	"lib/pkg_resources", "lib/blinker", "lib/click", "lib/alembic",
-        "lib/flask_script", "lib/mako", "lib/flask_migrate", "lib/flask_compress",
-        "lib/crypto","flask_adminlte",
+	"lib/flask_script", "lib/mako", "lib/flask_migrate", "lib/flask_compress",
+	"lib/crypto", "flask_adminlte",
 	]
 	
 print "passage dans imports.py ..."
@@ -24,5 +24,5 @@ print "chargement des libs "
     
 def AjouteCheminLibs(chemin=os.path.dirname(__name__)) :
     for lib in LISTE_LIBS :
-		print "chargement des libs  %s %s" % (chemin, lib)
         sys.path.append(os.path.join(chemin, lib))
+        print "chargement des libs  %s %s" % (chemin, lib)
