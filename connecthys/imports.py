@@ -24,4 +24,5 @@ print "chargement des libs "
     
 def AjouteCheminLibs(chemin=os.path.dirname(__name__)) :
     for lib in LISTE_LIBS :
+		print "chargement des libs  %s %s" % (chemin, lib)
         sys.path.append(os.path.join(chemin, lib))
