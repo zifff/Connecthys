@@ -23,17 +23,26 @@ REP_CONNECTHYS = os.path.dirname(REP_APPLICATION)
 import updater
 __version__ = updater.GetVersionActuelle()
 
+print "version %s" % (__version__) 
+
 # Init application
 app = Flask(__name__)
 
 # Configuration de flask
 try :
+    print "configuration 1 "
     from data.config import Config_application
+    print "configuration 2 "
     app.config.from_object(Config_application)
+    print "configuration 3 "
     app.config["VERSION_APPLICATION"] = __version__
+    print "configuration 4 "
     config_ok = True
+    print "configuration OK "
 except :
+    print "configuration KO "
     config_ok = False
+	
     
 # Flask compress
 #from flask_compress import Compress
