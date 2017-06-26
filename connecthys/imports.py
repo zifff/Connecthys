@@ -26,5 +26,6 @@ def AjouteCheminLibs(chemin=os.path.dirname(__name__)) :
     for lib in LISTE_LIBS :
         if chemin == "": 
 			chemin = os.environ.get('HOME','/opt/app-root/src')
+			chemin = '/opt/app-root/src/connecthys'
         sys.path.append(os.path.join(chemin, lib))
         print "chargement des libs  %s %s" % (chemin, lib)
