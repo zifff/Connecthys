@@ -83,6 +83,9 @@ print "serveur=%s host=%s port=%s" % (serveur, host, port)
 # Ajoute au path le chemin des librairies
 imports.AjouteCheminLibs()
 
+# prin sys.path charger.s
+print(sys.path)
+
 # Activation du SSL/TLS
 #import ssl
 #context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
