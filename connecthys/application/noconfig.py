@@ -12,6 +12,6 @@ from flask import Flask, render_template
 from application import app
 
 
-@app.route('/')
+@app.route('/noconfig')
 def noindex():
     return render_template('noconfig.html')
