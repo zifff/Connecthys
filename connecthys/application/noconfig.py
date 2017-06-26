@@ -13,5 +13,5 @@ from application import app
 
 
 @app.route('/')
-def index():
+def noindex():
     return render_template('noconfig.html')
