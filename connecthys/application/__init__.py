@@ -119,6 +119,6 @@ if config_ok == False :
     AdminLTE(app)
     print "debug noconfig.html"
     print "Le portail est correctement installé mais n'a pas encore été synchronisé par l'administrateur."
-#    import noconfig
+    import noconfig
     
     
